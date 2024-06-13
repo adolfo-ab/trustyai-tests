@@ -1,10 +1,14 @@
 [tool.poetry]
 name = "trustyai-tests"
 version = "0.1.0"
-description = ""
-authors = ["aaguirre <aaguirre@redhat.com>"]
+description = "TrustyAI E2E Testing Framework"
+authors = ["trustyai-tests"]
 readme = "README.md"
-packages = [{include = "trustyai_tests"}]
+packages = [
+  {include = "resources"},
+  {include = "tests"},
+  {include = "utilities"}
+]
 
 [tool.poetry.dependencies]
 python = "^3.12"
